@@ -26,5 +26,35 @@ class Recepten_ingrediënten:
     @property
     def eenheid(self):
         return self.__eenheid
+    
+    @receptID.setter
+    def receptID(self, value):
+        if not isinstance(value, int):
+            return False
+        self.__receptID = value
+
+    @ingrediëntID.setter
+    def ingrediëntID(self, value):
+        if not isinstance(value, int):
+            return False
+        self.__ingrediëntID = value
+
+    @alternatief_ingrediëntID.setter
+    def alternatief_ingrediëntID(self, value):
+        if not isinstance(value, int):
+            return False
+        self.__alternatief_ingrediëntID = value
+
+    @hoeveelheid.setter
+    def hoeveelheid(self, value):
+        if not isinstance(value, float, int):
+            return False
+        self.__hoeveelheid = value
+
+    @eenheid.setter
+    def eenheid(self, value):
+        if value == '':
+            return False
+        self.__eenheid = value
 
 
