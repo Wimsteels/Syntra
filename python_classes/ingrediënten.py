@@ -35,7 +35,7 @@ class Ingrediënten:
     
     @ingrediëntID.setter
     def ingrediëntID(self, value):
-        if value == "":
+        if not isinstance (value, int):
             return False
         self.__ingrediënt_categorie = value
 
@@ -59,12 +59,12 @@ class Ingrediënten:
     
     @hoeveelheid_in_stock.setter
     def hoeveelheid_in_stock(self, value):
-        if value == "":
+        if not isinstance (value, float, int):
             return False
         self.__hoeveelheid_in_stock = value
 
     @eenheid_in_stock.setter
-    def eenheid_in_stock(self, value)
+    def eenheid_in_stock(self, value):
         if value == "":
             return False
         self.__eenheid_in_stock = value

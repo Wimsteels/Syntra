@@ -15,12 +15,12 @@ class Materialen:
     
     @materiaalID.setter
     def materiaalID(self, value):
-        if value == "":
+        if not isinstance (value, int):
             return False
         self.__materiaalID = value
 
     @beschrijving.setter
-    def berschrijving(self, value):
+    def beschrijving(self, value):
         if value == "":
             return False
         self.__beschrijving = value
