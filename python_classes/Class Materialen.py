@@ -13,5 +13,19 @@ class Materialen:
     def beschrijving(self):
         return self.__beschrijving
     
+    @materiaalID.setter
+    def materiaalID(self, value):
+        if value == "":
+            return False
+        self.__materiaalID = value
+
+    @beschrijving.setter
+    def berschrijving(self, value):
+        if value == "":
+            return False
+        self.__beschrijving = value
+
+        
+    
     
     

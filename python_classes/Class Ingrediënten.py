@@ -32,3 +32,39 @@ class Ingrediënten:
     @property
     def eenheid_in_stock(self):
         return self.__eenheid_in_stock
+    
+    @ingrediëntID.setter
+    def ingrediëntID(self, value):
+        if value == "":
+            return False
+        self.__ingrediënt_categorie = value
+
+    @ingrediëntnaam.setter
+    def ingrediëntnaam(self, value):
+        if value == "":
+            return False
+        self.__ingrediëntnaam = value
+
+    @kleur.setter
+    def kleur(self, value):
+        if value == "":
+            return False
+        self.__kleur = value
+    
+    @ingrediënt_categorie.setter
+    def ingrediënt_categorie(self, value):
+        if value == "":
+            return False
+        self.ingrediënt_categorie = value
+    
+    @hoeveelheid_in_stock.setter
+    def hoeveelheid_in_stock(self, value):
+        if value == "":
+            return False
+        self.__hoeveelheid_in_stock = value
+
+    @eenheid_in_stock.setter
+    def eenheid_in_stock(self, value)
+        if value == "":
+            return False
+        self.__eenheid_in_stock = value
