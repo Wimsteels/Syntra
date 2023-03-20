@@ -9,14 +9,14 @@ try:
     'host': 'localhost',
     'user': 'root',
     'password': password_sql,
-    'database': 'reciperevolutiondb'
+    'database': 'reciperevolution'
     }
     #https://www.geeksforgeeks.org/args-kwargs-python/
     conn = msql.connect(**config) 
     if conn.is_connected():
 
         cursor = conn.cursor()
-        f = open('recept.json')  
+        f = open('../data/recept.json')  
         data = json.load(f)
 
         for i in data:

@@ -1,0 +1,45 @@
+body {background-color: coral;}
+
+h1 {
+    color: bisque;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+th{
+    border: 5px solid red;
+    padding-top: 12 px;
+    padding-top: 12 px;
+    color: white
+}
+table {
+width: 100%
+}
+
+td {
+    border: 2px solid lightslategray;
+}
+
+form{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+}
+label{
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+#textid{
+    background-color:blueviolet
+}

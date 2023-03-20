@@ -13,4 +13,4 @@ def getData(db, table):
     except Error as e:
         print("Error while connecting to MySQL", e)
 
-getData("tennisdb","spelers")
+getData("reciperevolution","recepten")
