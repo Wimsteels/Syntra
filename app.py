@@ -32,5 +32,16 @@ def chooseRecipeIngredient():
     data = get_data.getData("reciperevolutiondb","recepten_ingrediënten")
     return render_template("chooseRecipeIngredient.html",data = data)
 
+@app.route("/categorieën")
+def categorieën():
+    data = get_data.getData("reciperevolutiondb","categorieën")
+    return render_template("categorieën.html",data = data)
+
+@app.route("/recepten_materialen")
+def recepten_materialen():
+    data = get_data.getData("reciperevolutiondb","recepten_materialen")
+    return render_template("recepten_materialen.html",data = data)
+
+
 if __name__ == '__main__':
     app.run()

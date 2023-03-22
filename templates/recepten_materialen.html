@@ -14,27 +14,26 @@
                 <li><a href="addRecipe">Een receptje uitkiezen?</a>:</li>
                 <li><a href="chooseIngredient">Een ingrediëntje uitkiezen?</a>:</li>
                 <li><a href="chooseRecipeIngredient">Een ingrediëntje voor een receptje uitkiezen?</a>:</li>
-                <li><a href="materialen">Een materiaaltje uitkiezen voor een receptje?</a>:</li>
-                <li><a href="categorieën">Een categorie bepalen</a>:</li>   
-                <li><a href="recepten_materialen">Ga naar recepten - materialen?</a>:</li>                            
-
+                <li><a href="materialen">Een materiaaltje uitkiezen voor een receptje?</a>:</li>              
+                <li><a href="categorieën">Een categorie bepalen</a>:</li>
+                <li><a href="materialen">Een materiaal bepalen</a>:</li>     
             </ul>
         </header>
 
         <h1> Recipe Revolution: De soepwebsite</h1>
 
-        <p>Hier kunnen nieuwe materialen ingegeven worden!</p>
+        <p>Hier kunnen nieuwe categorieën ingegeven worden!</p>
 
         <table>
             <tr>
+                <th>RECEPTID</th>
                 <th>MATERIAALID</th>
-                <th>BESCHRIJVING</th>
             </tr>
             {%for row in data%}
             <tr>
                 <th>{{row[0]}}</th>
                 <th>{{row[1]}}</th>
-
+>
             </tr>
             {% endfor %}
         </table>
