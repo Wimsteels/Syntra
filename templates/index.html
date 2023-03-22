@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel = "stylesheet" href = "styles.css">
         <title>Recipe Revolution></title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
     </head>
 
     <body>
         <header>
             <ul><!--unordered list-->
-                <li><a href="addRecipe.html">Een nieuw recept toevoegen?</a>:</li>
-                <li><a href="chooseRecipe.html">Een receptje uitkiezen?</a>:</li>         
+                <li><a href= "/">Home</a></li>
+                <li><a href="addRecipe">Een nieuw recept toevoegen?</a>:</li>
+                <li><a href="chooseRecipe">Een receptje uitkiezen?</a>:</li>         
             </ul>
         </header>
 

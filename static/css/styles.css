@@ -1,7 +1,7 @@
-body {background-color: coral;}
+body {background-color: rgb(62, 55, 160);}
 
 h1 {
-    color: bisque;
+    color: rgb(206, 200, 193);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -13,7 +13,7 @@ p{
 }
 
 th{
-    border: 5px solid red;
+    border: 5px solid rgb(20, 20, 20);
     padding-top: 12 px;
     padding-top: 12 px;
     color: white
@@ -41,5 +41,5 @@ label{
 }
 
 #textid{
-    background-color:blueviolet
+    background-color:rgb(30, 14, 44)
 }
