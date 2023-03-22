@@ -12,30 +12,34 @@
                 <li><a href= "/">Home</a></li>
                 <li><a href="addRecipe">Een nieuw recept toevoegen?</a>:</li>
                 <li><a href="chooseRecipe">Een receptje uitkiezen?</a>:</li> 
-                <li><a href="chooseIngredient">Een ingrediëntje uitkiezen?</a>:</li>  
+                <li><a href="chooseIngredient">Een ingrediëntje uitkiezen?</a>:</li>   
                 <li><a href="chooseRecipeIngredient">Een ingrediëntje uitkiezen voor een receptje?</a>:</li>
                 <li><a href="materialen">Een materiaaltje uitkiezen voor een receptje?</a>:</li>    
             </ul>
         </header>
+        <table>
+        <tr>
+            <th>ingrediëntID</th>
+            <th>ingrediëntnaam</th>
+            <th>kleur</th>
+            <th>ingrediënt categorie</th>
+            <th>hoeveelheid in stock</th>
+            <th>eenheid in stock</th>
 
-        <h1> Recipe Revolution: De soepwebsite</h1>
+        </tr>
+        {%for row in data%}
+        <tr>
+            <th>{{row[0]}}</th>
+            <th>{{row[1]}}</th>
+            <th>{{row[2]}}</th>
+            <th>{{row[3]}}</th>
+            <th>{{row[4]}}</th>
+            <th>{{row[5]}}</th>
+        </tr>
+        {% endfor %}
+    </table>
 
-        <p>Hier kunnen nieuwe receptjes ingegeven worden!</p>
-
-        <form>
-            <label for="receptnaam">Receptnaam:</label><br>
-            <input type="text" id="textid"><br>
-            <label for="bereidingswijze">Bereidingswijze:</label><br>
-            <input type="text"><br>
-            <label for="ingrediënt1">Eerste Ingrediënt:</label><br>
-            <input type="text"><br>
-            <label for="ingrediënt2">Tweede Ingrediënt:</label><br>
-            <input type="text"><br>
-            <br>
-            <input type="submit" value="Submit">
-        </form>
     </body>
-    
 </html>
 
 

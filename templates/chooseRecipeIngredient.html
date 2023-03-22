@@ -14,27 +14,29 @@
                 <li><a href="chooseRecipe">Een receptje uitkiezen?</a>:</li> 
                 <li><a href="chooseIngredient">Een ingrediëntje uitkiezen?</a>:</li>
                 <li><a href="chooseRecipeIngredient">Een ingrediëntje uitkiezen voor een receptje?</a>:</li> 
-                <li><a href="materialen">Een materiaaltje uitkiezen voor een receptje?</a>:</li>        
+                <li><a href="materialen">Een materiaaltje uitkiezen voor een receptje?</a>:</li>       
             </ul>
         </header>
         <table>
         <tr>
-            <th>RECEPTNAAM</th>
-            <th>BEREIDINGSWIJZE</th>
+            <th>receptID</th>
+            <th>ingrediëntID</th>
+            <th>alternatief ingrediëntID</th>
+            <th>hoeveelheid</th>
+            <th>eenheid</th>
+
         </tr>
         {%for row in data%}
         <tr>
+            <th>{{row[0]}}</th>
             <th>{{row[1]}}</th>
             <th>{{row[2]}}</th>
-           
+            <th>{{row[3]}}</th>
+            <th>{{row[4]}}</th>
+            <th>{{row[5]}}</th>
         </tr>
         {% endfor %}
     </table>
-
-        <h1>Dé snoepwebsite</h1>
-        <p>Het was beter een soepwebsite geweest!</p>
-        <p>Maar dat was te gezond!</p>
-        <a href="/">Toch liever soep?</a>
     </body>
 </html>
 

@@ -1,7 +1,8 @@
-body {background-color: rgb(62, 55, 160);}
+body {background-color: rgb(32, 29, 82);}
+header a{color:white}
 
 h1 {
-    color: rgb(206, 200, 193);
+    color: rgb(245, 243, 241);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -41,5 +42,5 @@ label{
 }
 
 #textid{
-    background-color:rgb(30, 14, 44)
+    background-color:rgb(212, 206, 218)
 }
