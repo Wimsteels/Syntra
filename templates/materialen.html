@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe Revolution></title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+
+    </head>
+
+    <body>
+        <header>
+            <ul><!--unordered list-->
+                <li><a href="index.html">Terug naar startpagina?</a>:</li>
+                <li><a href="chooseRecipe.html">Een receptje uitkiezen?</a>:</li>
+                <li><a href="addRecipe.html">Een receptje uitkiezen?</a>:</li>
+                <li><a href="chooseIngredient.html">Een ingrediëntje uitkiezen?</a>:</li>
+                <li><a href="chooseRecipeIngredient.html">Een ingrediëntje voor een receptje uitkiezen?</a>:</li>                
+            </ul>
+        </header>
+
+        <h1> Recipe Revolution: De soepwebsite</h1>
+
+        <p>Hier kunnen nieuwe materialen ingegeven worden!</p>
+
+        <table>
+            <tr>
+                <th>MATERIAALID</th>
+                <th>BESCHRIJVING</th>
+            </tr>
+            {%for row in data%}
+            <tr>
+                <th>{{row[1]}}</th>
+                <th>{{row[2]}}</th>
+                <th>{{row[3]}}</th>
+                <th>{{row[4]}}</th>
+                <th>{{row[5]}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+    
+</html>
+
+
+
+<!--Commentaar-->

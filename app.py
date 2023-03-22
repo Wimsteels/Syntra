@@ -17,5 +17,10 @@ def chooseRecipe():
     data = get_data.getData("reciperevolutiondb","recepten")
     return render_template("chooseRecipe.html",data = data)
 
+@app.route("/materialen")
+def materialen():
+    data = get_data.getData("reciperevolutiondb","materialen")
+    return render_template("materialen.html",data = data)
+
 if __name__ == '__main__':
     app.run()
