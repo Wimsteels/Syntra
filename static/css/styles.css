@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 body {background-color: rgb(167, 166, 180);}
 header a{
     color: white;
 }
+=======
+body {background-color: rgb(32, 29, 82);}
+header a{color:white}
+
+>>>>>>> 510f9e6d7bf331ff48c6f121eba2e65799164dc4
 h1 {
-    color: rgb(206, 200, 193);
+    color: rgb(245, 243, 241);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
@@ -43,5 +49,5 @@ label{
 }
 
 #textid{
-    background-color:rgb(30, 14, 44)
+    background-color:rgb(212, 206, 218)
 }
