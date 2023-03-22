@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-body {background-color: rgb(167, 166, 180);}
+body {background-color: rgb(15, 12, 53);}
 header a{
     color: white;
 }
-=======
 body {background-color: rgb(32, 29, 82);}
 header a{color:white}
 
->>>>>>> 510f9e6d7bf331ff48c6f121eba2e65799164dc4
 h1 {
     color: rgb(245, 243, 241);
     text-align: center;
